@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking swipperJS CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>My-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/114d66ac77.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.png" class="logo"> -->
+                 <h1>Mjey</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>React DEV.</p>
+                <h1>Hi, I'm <span>Michael</span> James</h1>
+                
+                 <a href="#contact" class="button">Hire me.</a>
+                 <div class="social-icons">
+                    <a href="https://www.facebook.com/mikeljames0000"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/mjeyjey"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/mike.jey_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------about--------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi! I’m Michael James Raya, a passionate web developer 
+                       who enjoys building clean and user-friendly websites. 
+                       I’m constantly learning new technologies and improving my skills
+                       to create designs that not only look good but also work smoothly. 
+                       My goal is to grow as a developer while building projects
+                       that make a positive impact.</p>
+
+                       <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                       </div>
+                       <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full Stack Dev.</span><br>Building Web-based Application</li>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Graphic Artist</span><br>Graphic Designing</li>
+                            <li><span>Traditional Artist</span><br>Charcoal Art Portraits</li>
+                        </ul>
+                       </div>
+                        <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2025</span><br>Building Web-based Application</li>
+                            <li><span>2025</span><br>Designing Web/App interfaces</li>
+                            <li><span>2023 - Curent</span><br>Graphic Designing</li>
+                            <li><span>2022 - Current</span><br>Charcoal Art Portraits</li>
+                        </ul>
+                       </div>
+                        <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>Java Training in Tesda</li>
+                            <li><span>2023</span><br>BS in Information Systems at La Concecion College</li>
+
+                          
+                        </ul>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ----------------------------services------------------------- -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web-Based App</h2>
+                <p>I create web-based applications that run smoothly in browsers. 
+                   These systems are designed to solve real-world problems such as recruitment platforms, 
+                   enrollment systems, or management tools. My focus is on making them simple, user-friendly, and functional. </p>
+                   
+                <a href="#contact">learn more</a>
+            </div>
+              <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>I create user interface (UI) and user experience (UX) designs 
+                    that make applications easy to navigate and visually appealing. 
+                    My goal is to ensure users have a smooth and enjoyable experience
+                     while using the system.</p>
+                <a href="#contact">learn more</a>
+            </div>
+              <div>
+                <i class="fa-solid fa-pen-to-square"></i>
+                <h2>Graphic Design</h2>
+                <p>I design graphics such as posters, social media content, 
+                    and layouts that communicate messages clearly. My work focuses
+                     on creativity, clarity, and making designs that capture attention.</p>
+                <a href="#contact">learn more</a>
+            </div>
+             <div>
+                <i class="fa-solid fa-clapperboard"></i>
+                <h2>Video Edit</h2>
+                <p>I edit videos for presentations, projects, or social media. 
+                   This includes cutting clips, adding effects, transitions, 
+                   and text to make the video engaging and professional-looking.</p>
+                <a href="#contact">learn more</a>
+            </div>
+             
+    </div>
+</div>
+<!-- ----------------------portfolio------------------------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+
+    <div class="worktype-container">
+        <h2 class="type">Web-App</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="images/portfolio.png" alt="">
+            <h2 class="project-title">Portfolio Website</h2>
+            <p class="project-details">A responsive personal portfolio built with HTML, CSS, and JS.</p>
+            <a href="#" class="project-link" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="images/SkillKita.png" alt="">
+            <h2 class="project-title">SkillKita</h2>
+            <p class="project-details">An online shop system with product listing and checkout.</p>
+            <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="images/work-3.png" alt="">
+            <h2 class="project-title">Blog Platform</h2>
+            <p class="project-details">A dynamic blog with categories, search, and comments.</p>
+            <a href="#" class="project-link" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+           <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="images/SkillKita.png" alt="">
+            <h2 class="project-title">SkillKita</h2>
+            <p class="project-details">An online shop system with product listing and checkout.</p>
+            <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+   
+      </div>
+
+      <!-- Swiper Pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Swiper Navigation -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+</div>
+ <div class="worktype-container">
+        <h2 class="type">Designs</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="images/work-1.png" alt="">
+            <h2 class="project-title">Portfolio Website</h2>
+            <p class="project-details">A responsive personal portfolio built with HTML, CSS, and JS.</p>
+            <a href="#" class="project-link" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="images/work-2.png" alt="">
+            <h2 class="project-title">E-Commerce Store</h2>
+            <p class="project-details">An online shop system with product listing and checkout.</p>
+            <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="images/work-3.png" alt="">
+            <h2 class="project-title">Blog Platform</h2>
+            <p class="project-details">A dynamic blog with categories, search, and comments.</p>
+            <a href="#" class="project-link" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+         <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="images/work-4.png" alt="">
+            <h2 class="project-title">Blog Platform</h2>
+            <p class="project-details">A dynamic blog with categories, search, and comments.</p>
+            <a href="#" class="project-link" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+      </div>
+      <!-- Swiper Pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Swiper Navigation -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+</div>
+
+  </div>
+</div>
+
+
+
+<!-- ---------------------------contact--------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>rayamichaeljames@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+639165417042</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mikeljames0000"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/mjeyjey"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/mike.jey_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyrigth @michael. Created by mjey</p>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+         for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<!-- linking swiperJS script -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- swiper script -->
+<script>
+    const swiper = new Swiper('.swiper', {
+    slidesPerView: 1.2,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    centeredSlides: true,
+    effect: "slide",
+    loop: true,
+  });
+</script>
+
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzmJOEK_fBk-745H_oO8nMPprPEK0BKKD_VGM1sgl6a74hgUdvV_W2bZGYRpcBL2JzSnA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+      console.log("Submitting form...");
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent Successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
