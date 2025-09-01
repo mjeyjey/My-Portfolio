@@ -241,14 +241,14 @@ nav ul li a:hover::after{
   display: block;
 }
 /* test */
-.worktype-container2 .project-card img{
+/* .worktype-container2 .project-card img{
   width: 100%;             
   max-height: 1080px;
   object-fit: cover;   
   border-radius: 10px;  
   margin-bottom: 15px;      
   display: block;
-}
+} */
     
 
 .project-title {
@@ -454,6 +454,7 @@ nav .fas{
     display: block;
 
 }
+
 
 
 
